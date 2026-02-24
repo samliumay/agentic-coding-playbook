@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  23 FEB 2026 08:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  23 FEB 2026 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,23 +425,262 @@ ng-playbook.toc)
 
 
 [2] [3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-(./agentic-coding-playbook.aux)
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 +-------------+       Installs       +-------------+       E
+xtends       +-------------+[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 |             | -------------------> |             | -------
+-----------> |             |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 |    User     |                      | Skill Repo  |        
+             |  AI Agent   |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 |             | <------------------- | (skills.sh) | <------
+------------ |             |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 +-------------+       Downloads      +-------------+       P
+rovides      +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 +-------------+                       +-------------+       
+              +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 |             |                       |             |       
+              |             |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 | Local Env   |                       | Security    |       
+              | New Tools   |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 |             |                       | Sandbox     |       
+              | & Context   |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 85--85
+[]\OT1/cmtt/m/n/10 +-------------+                       +-------------+       
+              +-------------+[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 +-------------+       Triggers       +-------------+       E
+xecutes      +-------------+[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 |             | -------------------> |             | -------
+-----------> |             |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 |    User     |                      | Command     |        
+             | AI Agent    |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 |             | <------------------- | Definition  | <------
+------------ |             |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 +-------------+       Returns        +-------------+       P
+rovides      +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 +-------------+                       +-------------+       
+              +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 |             |                       |             |       
+              |             |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 | Input Args  |                       | Predefined  |       
+              | Workspace   |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 | (--file=..) |                       | Workflow    |       
+              | Actions     |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 +-------------+                       +-------------+       
+              +-------------+[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 +-------------+       Defines        +-------------+       A
+pplies       +-------------+[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 |             | -------------------> |             | -------
+-----------> |             |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 |    User     |                      | .rules File |        
+             | AI Agent    |[] 
+ []
+
+
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 |             | <------------------- |             | <------
+------------ |             |[] 
+ []
+
+[4]
+Overfull \hbox (9.02808pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 +-------------+       Updates        +-------------+       R
+eads         +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 +-------------+                       +-------------+       
+              +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 |             |                       |             |       
+              |             |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 | Constraints |                       | Persistent  |       
+              | Consistent  |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 | & Standards |                       | Context     |       
+              | Code Output |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 138--138
+[]\OT1/cmtt/m/n/10 +-------------+                       +-------------+       
+              +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 180--180
+[]\OT1/cmtt/m/n/10 +-------------+       Triggers       +-------------+       A
+nalyzes       +-------------+[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 180--180
+[]\OT1/cmtt/m/n/10 |             | -------------------> |             | -------
+------------> |             |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 180--180
+[]\OT1/cmtt/m/n/10 | Git Commit  |                      | Agent Hook  |        
+              | Source Code |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 180--180
+[]\OT1/cmtt/m/n/10 |             | <------------------- |             | <------
+------------- |             |[] 
+ []
+
+
+Overfull \hbox (14.27803pt too wide) in paragraph at lines 180--180
+[]\OT1/cmtt/m/n/10 +-------------+    Returns Review    +-------------+    Find
+s Issues      +-------------+[] 
+ []
+
+[5]
+Overfull \hbox (30.0279pt too wide) in paragraph at lines 192--192
+[]\OT1/cmtt/m/n/10 +-------------+       MCP Protocol       +-------------+    
+   Fetches       +-------------+[] 
+ []
+
+
+Overfull \hbox (30.0279pt too wide) in paragraph at lines 192--192
+[]\OT1/cmtt/m/n/10 |             | -----------------------> |             | ---
+---------------> |             |[] 
+ []
+
+
+Overfull \hbox (30.0279pt too wide) in paragraph at lines 192--192
+[]\OT1/cmtt/m/n/10 |  AI Agent   |                          | MCP Server  |    
+                 | Data Source |[] 
+ []
+
+
+Overfull \hbox (30.0279pt too wide) in paragraph at lines 192--192
+[]\OT1/cmtt/m/n/10 |  (Client)   | <----------------------- |             | <--
+---------------- | (DB, API)   |[] 
+ []
+
+
+Overfull \hbox (30.0279pt too wide) in paragraph at lines 192--192
+[]\OT1/cmtt/m/n/10 +-------------+       JSON-RPC           +-------------+    
+   Returns       +-------------+[] 
+ []
+
+[6] (./agentic-coding-playbook.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `agentic-coding-playbook.out' has not changed
 .
-(rerunfilecheck)             Checksum: B6F1DDD8F302F6E7E8E0E5DDC3E9354E;709.
+(rerunfilecheck)             Checksum: FE6938ED9C4B8DAFBA3E85D789FA5683;1195.
  ) 
 Here is how much of TeX's memory you used:
- 11553 strings out of 467538
- 173062 string characters out of 5423725
- 591544 words of memory out of 5000000
- 40319 multiletter control sequences out of 15000+600000
+ 11570 strings out of 467538
+ 173320 string characters out of 5423725
+ 624545 words of memory out of 5000000
+ 40327 multiletter control sequences out of 15000+600000
  636087 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,414b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,622b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dis
@@ -449,10 +688,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super
 /sfrm1000.pfb>
-Output written on agentic-coding-playbook.pdf (3 pages, 96578 bytes).
+Output written on agentic-coding-playbook.pdf (6 pages, 113710 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

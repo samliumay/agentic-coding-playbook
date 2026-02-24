@@ -64,5 +64,133 @@ and capabilities of your agent. We will take a look at how to configure an agent
 Skills are mainly helpers for the agents. They give context to the agent to perform tasks better. There are a lot of skills that you can use.
 You can find skills at \url{https://skills.sh/}. There are also other sites that host skills for agents. 
 
+Skills are essentially modular capabilities or plugins that you can install to extend your AI agent's functionality. They provide specific context, tools, or instructions tailored to particular domains, such as penetration testing, web development, or data analysis. However, because skills can execute code or interact with your local environment, they introduce potential security flaws. Malicious or poorly written skills could execute arbitrary commands, leak sensitive workspace data, or introduce vulnerabilities into your codebase.
 
+When downloading skills from repositories like \url{https://skills.sh/}, it is crucial to review their source code and permissions. Security tests on these platforms often involve static analysis of the skill's instructions, checking for unauthorized network requests, and sandboxing execution to ensure the skill does not access restricted files or environment variables.
+
+\begin{verbatim}
++-------------+       Installs       +-------------+       Extends       +-------------+
+|             | -------------------> |             | ------------------> |             |
+|    User     |                      | Skill Repo  |                     |  AI Agent   |
+|             | <------------------- | (skills.sh) | <------------------ |             |
++-------------+       Downloads      +-------------+       Provides      +-------------+
+      |                                     |                                   |
+      |                                     |                                   |
+      v                                     v                                   v
++-------------+                       +-------------+                     +-------------+
+|             |                       |             |                     |             |
+| Local Env   |                       | Security    |                     | New Tools   |
+|             |                       | Sandbox     |                     | & Context   |
++-------------+                       +-------------+                     +-------------+
+\end{verbatim}
+
+\subsection{Commands}
+
+Commands are predefined instructions or shortcuts that trigger specific agent behaviors or workflows. They allow developers to quickly execute repetitive tasks without writing lengthy prompts every time. You can use commands to scaffold projects, run test suites, or format code according to your project's style guide.
+
+Here is an example of a classic command without inputs:
+\begin{verbatim}
+/format-workspace
+\end{verbatim}
+This command might instruct the agent to run a linter and formatter across all files in the current directory.
+
+Here is an example of a command that takes an input:
+\begin{verbatim}
+/generate-test --file=src/auth.ts
+\end{verbatim}
+This command directs the agent to specifically read the \texttt{src/auth.ts} file and generate a corresponding unit test file.
+
+\begin{verbatim}
++-------------+       Triggers       +-------------+       Executes      +-------------+
+|             | -------------------> |             | ------------------> |             |
+|    User     |                      | Command     |                     | AI Agent    |
+|             | <------------------- | Definition  | <------------------ |             |
++-------------+       Returns        +-------------+       Provides      +-------------+
+      |                                     |                                   |
+      |                                     |                                   |
+      v                                     v                                   v
++-------------+                       +-------------+                     +-------------+
+|             |                       |             |                     |             |
+| Input Args  |                       | Predefined  |                     | Workspace   |
+| (--file=..) |                       | Workflow    |                     | Actions     |
++-------------+                       +-------------+                     +-------------+
+\end{verbatim}
+
+
+\subsection{Rules}
+
+Rules (often defined in files like \texttt{.cursorrules} or \texttt{.clauderules}) are persistent instructions that dictate how the agent should behave within a specific workspace. They are used to enforce coding standards, specify architectural patterns, or restrict certain actions. To use them, you simply create a rules file in your project's root directory and define your constraints in plain English. The agent will automatically read these rules and apply them to all subsequent interactions, ensuring consistency across your codebase.
+
+\begin{verbatim}
++-------------+       Defines        +-------------+       Applies       +-------------+
+|             | -------------------> |             | ------------------> |             |
+|    User     |                      | .rules File |                     | AI Agent    |
+|             | <------------------- |             | <------------------ |             |
++-------------+       Updates        +-------------+       Reads         +-------------+
+      |                                     |                                   |
+      |                                     |                                   |
+      v                                     v                                   v
++-------------+                       +-------------+                     +-------------+
+|             |                       |             |                     |             |
+| Constraints |                       | Persistent  |                     | Consistent  |
+| & Standards |                       | Context     |                     | Code Output |
++-------------+                       +-------------+                     +-------------+
+\end{verbatim}
+
+\subsection{Subagents}
+
+Subagents are specialized, autonomous AI instances spawned by a primary agent to handle complex, multi-step tasks. Instead of the main agent trying to do everything at once, it delegates specific sub-tasks (like researching documentation, searching the codebase, or running a series of terminal commands) to a subagent. The subagent works independently and reports back its findings to the main agent, which then synthesizes the final output for the user.
+
+\begin{verbatim}
++-------------+       Delegates Task       +-----------------+
+|             | -------------------------> |                 |
+| Main Agent  |                            |    Subagent     |
+|             | <------------------------- |                 |
++-------------+       Returns Result       +-----------------+
+      ^                                             |
+      |                                             |
+      | Interacts                             Reads/Executes
+      |                                             |
+      v                                             v
++-------------+                            +-----------------+
+|             |                            |                 |
+|    User     |                            | Workspace/Tools |
+|             |                            |                 |
++-------------+                            +-----------------+
+\end{verbatim}
+
+\subsection{Hooks}
+
+Hooks are automated triggers that execute specific agent actions at predefined points in your development lifecycle, such as pre-commit, post-save, or pre-push. They are used to automatically review code, generate commit messages, or run security checks before changes are finalized. To use them, you configure the agent to listen for specific Git or editor events and define the script or prompt that should run when the event occurs.
+
+\begin{verbatim}
++-------------+       Triggers       +-------------+       Analyzes       +-------------+
+|             | -------------------> |             | -------------------> |             |
+| Git Commit  |                      | Agent Hook  |                      | Source Code |
+|             | <------------------- |             | <------------------- |             |
++-------------+    Returns Review    +-------------+    Finds Issues      +-------------+
+      |                                     |
+      |                                     |
+      v                                     v
++-------------+                       +-------------+
+|             |                       |             |
+| Commit Log  |                       | Auto-Fixes  |
+|             |                       |             |
++-------------+                       +-------------+
+\end{verbatim}
+
+\subsection{MCP}
+
+The Model Context Protocol (MCP) is an open standard that enables AI models to securely connect to local or remote data sources and tools. It works by establishing a standardized client-server architecture where the AI agent (the client) communicates with an MCP server that exposes specific resources, prompts, or tools. To use it, you configure your agent with the connection details of an MCP server (e.g., a database connector or a GitHub integration). The agent can then query this server to fetch real-time context or perform actions outside its default capabilities.
+
+\begin{verbatim}
++-------------+       MCP Protocol       +-------------+       Fetches       +-------------+
+|             | -----------------------> |             | ------------------> |             |
+|  AI Agent   |                          | MCP Server  |                     | Data Source |
+|  (Client)   | <----------------------- |             | <------------------ | (DB, API)   |
++-------------+       JSON-RPC           +-------------+       Returns       +-------------+
+\end{verbatim}
+
+
+\subsection{}
 \end{document}
